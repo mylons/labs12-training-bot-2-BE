@@ -1,7 +1,6 @@
 require("dotenv").config();
 
 module.exports = {
-  /*
   development: {
     client: "postgresql",
     connection: {
@@ -37,5 +36,5 @@ module.exports = {
       directory: "./models/seeds/"
     },
     useNullAsDefault: true
-  }*/
+  }
 };
