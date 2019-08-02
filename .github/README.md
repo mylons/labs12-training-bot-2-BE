@@ -35,7 +35,7 @@ This project has an `app.json` file, which allows us to offer "one-click deploym
 
 **NOTE:** Before clicking the button below you'll want to make sure you've completed the [prerequisite setup steps](../docs/prerequisites.md) in the [complete documentation](../docs/README.md).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/labs12-training-bot-2/labs12-training-bot-2-BE/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mylons/labs12-training-bot-2-BE/)
 
 ## API
 
