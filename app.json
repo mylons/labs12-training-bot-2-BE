@@ -1,7 +1,7 @@
 {
   "name": "Training Bot",
   "description": "An Express + Node.js API for Training Bot",
-  "repository": "https://github.com/labs12-training-bot-2/labs12-training-bot-2-BE",
+  "repository": "https://github.com/mylons/labs12-training-bot-2-BE",
   "logo": "https://i.imgur.com/izl59sH.png",
   "keywords": [
     "node",
