@@ -25,9 +25,7 @@ const notificationsRouter = require("./controllers/notification");
 const responsesRouter = require("./controllers/responses");
 
 //API Endpoints
-console.log("lul, using auth router");
 server.use("/api/auth", authRouter);
-console.log("authRouter used: ", authRouter);
 server.use("/api/users", authentication, usersRouter);
 server.use("/api/team-members", authentication, teamsRouter);
 server.use("/api/training-series", authentication, trainingsRouter);
