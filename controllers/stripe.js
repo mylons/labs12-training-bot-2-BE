@@ -278,27 +278,6 @@ router.get("/subscriptions", async (req, res) => {
   }
 });
 
-router.get("/subscriptions/revenue", async (req, res) => {
-  /**
-   * get the different subscription plans
-   * @function
-   * @param {Object} req - The Express request object
-   * @param {Object} res - The Express response object
-   * @returns {Object} - The Express response object
-   */
-  let total_revenue = 0
-  try {
-    //only retrieve 3 subscriptions that go with the 3 plans we offer, if more plans are added this limit number should change.
-    for await (const subscription of stripe.subscription.list({limit: 3})) {
-      console.log("found a sub: ", subscription)
-      total_revenue = total_revenue + (subscription.plan.amount * subscription.quantity) 
-      console.log("found a sub: ", subscription, " revenue so far: ", total_revenue)
-    }
-  } catch (error) {
-    console.log(error);
-  }
-});
-
 router.get("/customer/plan", async (req, res) => {
   /**
    * gets and shows the customer's current plan according to stripe.
