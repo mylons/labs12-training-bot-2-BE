@@ -46,6 +46,7 @@ const teamMemberSchema = {
 
 const trainingSeriesSchema = {
   title: Joi.string().required(),
+  training_type: Joi.string().required(),
   user_id: Joi.number()
     .integer()
     .min(1)
