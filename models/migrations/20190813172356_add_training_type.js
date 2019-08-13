@@ -1,7 +1,7 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.table("training_series", tbl => {
-    tbl.text("training_type").notNullable();
+    tbl.text("training_type").notNullable().defaultTo("online");
   }); 
 };
 
